@@ -1,0 +1,31 @@
+# Development dependencies for Ultimate MNIST Digit Recognition
+
+# Testing
+pytest>=6.0.0
+pytest-cov>=2.10.0
+pytest-mock>=3.6.0
+pytest-xdist>=2.4.0
+
+# Code quality
+black>=21.0.0
+flake8>=3.8.0
+mypy>=0.800
+isort>=5.8.0
+pre-commit>=2.15.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+myst-parser>=0.15.0
+
+# Type checking
+types-requests>=2.25.0
+types-Pillow>=8.0.0
+
+# Jupyter for development
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Additional utilities
+tqdm>=4.64.0
+requests>=2.25.0
