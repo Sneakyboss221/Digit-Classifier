@@ -1,4 +1,4 @@
-# 🔢 Ultimate MNIST Digit Recognition
+# 🔢 MNIST Digit Recognition
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)
@@ -297,16 +297,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **MNIST Dataset**: Created by Yann LeCun and Corinna Cortes
 - **PyTorch Community**: For the excellent deep learning framework
 - **Streamlit Team**: For the amazing web app framework
-- **Original Repository Contributors**:
-  - [xEC40/MNIST-ResNet-digit-recognizer](https://github.com/xEC40/MNIST-ResNet-digit-recognizer)
-  - [aakashjhawar/handwritten-digit-recognition](https://github.com/aakashjhawar/handwritten-digit-recognition)
-  - [Jalalbaim/MNIST-Digit-recognition](https://github.com/Jalalbaim/MNIST-Digit-recognition)
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/Digit-Classifier/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/Digit-Classifier/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/Sneakyboss221/Digit-Classifier/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Sneakyboss221/Digit-Classifier/discussions)
+- **Email**: Sneakyboss221@gmail.com
 
 ## 🚀 Roadmap
 
