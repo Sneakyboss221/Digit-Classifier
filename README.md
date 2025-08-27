@@ -4,8 +4,10 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.22+-green.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/yourusername/hybrid-movie-recommendation-system?style=social)](https://github.com/Sneakyboss221/hybrid-movie-recommendation-system)
+[![Forks](https://img.shields.io/github/forks/yourusername/hybrid-movie-recommendation-system?style=social)](https://github.com/Sneakyboss221/hybrid-movie-recommendation-system)
 
-A comprehensive, production-ready MNIST digit recognition system featuring multiple machine learning models with interactive web interface, advanced visualizations, and ensemble predictions.
+> **A comprehensive, production-ready MNIST digit recognition system featuring multiple machine learning models with interactive web interface, advanced visualizations, and ensemble predictions.**
 
 ## 🚀 Features
 
@@ -314,5 +316,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Cloud deployment guides
 
 ---
+<div align="center">
 
-⭐ **Star this repository if you find it helpful!**
+**Made by Sneaky**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sneakyboss221)
+
+
+**⭐ Star this repository if you found it helpful!**
+
+</div>
