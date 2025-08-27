@@ -26,7 +26,7 @@ class LeNet5Model(nn.Module):
         self.conv2 = nn.Conv2d(self.config['conv1_filters'], self.config['conv2_filters'], 
                               kernel_size=5, stride=1, padding=0)
         self.conv3 = nn.Conv2d(self.config['conv2_filters'], self.config['conv3_filters'], 
-                              kernel_size=5, stride=1, padding=0)
+                              kernel_size=4, stride=1, padding=0)  # Changed from 5x5 to 4x4
         
         # Fully connected layers
         self.fc1 = nn.Linear(self.config['conv3_filters'], self.config['fc1_size'])

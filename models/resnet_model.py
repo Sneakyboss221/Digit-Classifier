@@ -78,7 +78,7 @@ class ResNetModel(nn.Module):
             self.config['block_channels'][0], 
             self.config['block_channels'][1], 
             self.config['num_blocks'][1], 
-            stride=2
+            stride=1  # Changed from 2 to 1 to avoid making feature map too small
         )
         
         # Global average pooling

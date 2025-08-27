@@ -162,9 +162,9 @@ class StreamlitDrawingCanvas:
         """Create a Streamlit canvas for drawing"""
         import streamlit as st
         
-        # Create canvas using streamlit-canvas
+        # Create canvas using streamlit-drawable-canvas
         try:
-            from streamlit_canvas import st_canvas
+            from streamlit_drawable_canvas import st_canvas
             
             canvas_result = st_canvas(
                 fill_color="rgba(255, 165, 0, 0.3)",
@@ -190,7 +190,7 @@ class StreamlitDrawingCanvas:
             return canvas_result
             
         except ImportError:
-            st.error("streamlit-canvas not installed. Please install it with: pip install streamlit-canvas")
+            st.error("streamlit-drawable-canvas not installed. Please install it with: pip install streamlit-drawable-canvas")
             return None
     
     def get_drawing_array(self):

@@ -13,17 +13,28 @@ def check_dependencies():
     """Check if all required dependencies are installed"""
     print("🔍 Checking dependencies...")
     
-    required_packages = [
-        'torch', 'torchvision', 'numpy', 'matplotlib', 'seaborn',
-        'scikit-learn', 'streamlit', 'opencv-python', 'pillow',
-        'pandas', 'plotly', 'tqdm', 'pygame'
-    ]
+    # Map package names to their import names
+    package_mapping = {
+        'torch': 'torch',
+        'torchvision': 'torchvision', 
+        'numpy': 'numpy',
+        'matplotlib': 'matplotlib',
+        'seaborn': 'seaborn',
+        'scikit-learn': 'sklearn',
+        'streamlit': 'streamlit',
+        'opencv-python': 'cv2',
+        'pillow': 'PIL',
+        'pandas': 'pandas',
+        'plotly': 'plotly',
+        'tqdm': 'tqdm',
+        'pygame': 'pygame'
+    }
     
     missing_packages = []
     
-    for package in required_packages:
+    for package, import_name in package_mapping.items():
         try:
-            __import__(package)
+            __import__(import_name)
             print(f"✅ {package}")
         except ImportError:
             print(f"❌ {package} - MISSING")
