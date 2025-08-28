@@ -23,9 +23,9 @@ class TestMLPModel:
         model = create_mlp_model()
         batch_size = 32
         input_tensor = torch.randn(batch_size, 784)
-        
+
         output = model(input_tensor)
-        
+
         assert output.shape == (batch_size, 10)
         assert not torch.isnan(output).any()
 
@@ -34,9 +34,9 @@ class TestMLPModel:
         model = create_mlp_model()
         batch_size = 16
         input_tensor = torch.randn(batch_size, 1, 28, 28)  # Image format
-        
+
         output = model(input_tensor)
-        
+
         assert output.shape == (batch_size, 10)
         assert not torch.isnan(output).any()
 
@@ -55,9 +55,9 @@ class TestLeNet5Model:
         model = create_lenet5_model()
         batch_size = 32
         input_tensor = torch.randn(batch_size, 1, 28, 28)
-        
+
         output = model(input_tensor)
-        
+
         assert output.shape == (batch_size, 10)
         assert not torch.isnan(output).any()
 
@@ -76,9 +76,9 @@ class TestResNetModel:
         model = create_resnet_model()
         batch_size = 32
         input_tensor = torch.randn(batch_size, 1, 28, 28)
-        
+
         output = model(input_tensor)
-        
+
         assert output.shape == (batch_size, 10)
         assert not torch.isnan(output).any()
 
@@ -88,30 +88,22 @@ class TestModelConsistency:
 
     def test_all_models_same_output_shape(self):
         """Test that all models produce the same output shape."""
-        models = [
-            create_mlp_model(),
-            create_lenet5_model(),
-            create_resnet_model()
-        ]
-        
+        models = [create_mlp_model(), create_lenet5_model(), create_resnet_model()]
+
         batch_size = 16
         input_tensor = torch.randn(batch_size, 1, 28, 28)
-        
+
         for model in models:
             output = model(input_tensor)
             assert output.shape == (batch_size, 10)
 
     def test_model_output_probabilities(self):
         """Test that model outputs are valid probabilities."""
-        models = [
-            create_mlp_model(),
-            create_lenet5_model(),
-            create_resnet_model()
-        ]
-        
+        models = [create_mlp_model(), create_lenet5_model(), create_resnet_model()]
+
         batch_size = 8
         input_tensor = torch.randn(batch_size, 1, 28, 28)
-        
+
         for model in models:
             output = model(input_tensor)
             # Check that outputs sum to 1 (log probabilities)
